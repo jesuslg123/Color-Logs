@@ -1,4 +1,6 @@
-Node.js module to get better logs.
+#Color-log
+
+###Node.js module to get better logs. 
 
 Color-log works as console.log logger on Node.js but with extra data and colors to make easier find the lines on your log files.
 
