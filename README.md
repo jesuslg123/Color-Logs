@@ -6,6 +6,9 @@ Color-log works as console.log logger on Node.js but with extra data and colors 
 
 You can use simple as:
 
+var color-log = require('path/color-log.js');
+var log = new color-log(isLogEnabled, isDebugEnabled, filename);
+
 - log.Debug();
 - log.Info();
 - log.Warning();
