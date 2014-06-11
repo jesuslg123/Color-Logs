@@ -11,7 +11,7 @@ Color-logs works as console.log logger on Node.js but with extra data and colors
 ## Usage
 You can use all of them as console.log(), send just a string, multiple strings or mix strings and objects.
 
-    var log = require('path/color-logs.js')(isLogEnabled, isDebugEnabled, __filename);
+    var log = require('color-logs.js')(isLogEnabled, isDebugEnabled, __filename);
     
     log.Debug(...);
     log.Info(...);

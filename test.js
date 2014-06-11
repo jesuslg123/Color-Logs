@@ -3,7 +3,7 @@
 var isLogEnabled = true;
 var isDebugEnabled = true;
 
-var log = require(__dirname + '/color-logs.js')(isLogEnabled, isDebugEnabled, __filename);
+var log = require('color-logs.js')(isLogEnabled, isDebugEnabled, __filename);
 
 log.Info('Testing color-logs with an INFO message');
 log.Info('Testing color-logs with an INFO message and objects', __filename, isDebugEnabled);
