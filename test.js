@@ -1,5 +1,4 @@
 
-
 var isLogEnabled = true;
 var isDebugEnabled = true;
 
