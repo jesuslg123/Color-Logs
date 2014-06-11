@@ -19,3 +19,5 @@ You can use all of them as console.log(), send just a string, multiple strings o
 - 06 Jun 15:40:36.045 - **[file_name.js]** INFO: message {object to value also} *-> GREEN*
 - 06 Jun 15:40:36.045 - **[file_name.js]** WARNING: message {object to value also} *-> YELLOW*
 - 06 Jun 15:40:36.045 - **[file_name.js]** ERROR: message {object to value also} *-> RED*
+
+![Color-log](http://i60.tinypic.com/2lm1g1f.png)
