@@ -38,4 +38,6 @@ You can use all of them as console.log(), send just a string, multiple strings o
 
 ## Release History
 
+* 0.2.0 Fixed test and enabled and disable bug and log
+
 * 0.1.0 Initial release

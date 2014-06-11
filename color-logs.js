@@ -17,8 +17,8 @@
 
 	p.inizializate = function(isLogEnable, isDebugMode, parentName)
 	{
-		this._logEnable = true;
-		this._debugMode = true;
+		this._logEnable = isLogEnable;
+		this._debugMode = isDebugMode;
 		var fileSplit = parentName.split('/');
 		this._parentName = fileSplit[fileSplit.length-1];
 		this._monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dece" ];
