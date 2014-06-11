@@ -4,7 +4,7 @@
   "description": "Color-log works as console.log logger on Node.js but with extra data and colors to make easier find the lines on your log files.",
   "main": "color-log.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./test.js"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/jesuslg123/Color-Log/issues"
   },
-  "homepage": "https://github.com/jesuslg123/Color-Log"
+  "homepage": "https://github.com/jesuslg123/Color-Log",
+  "dependencies": {
+    "colors": "x"
+  }
 }
