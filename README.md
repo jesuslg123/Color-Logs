@@ -1,17 +1,17 @@
-#Color-log
+#Color-logs
 
 ###Node.js module to get better logs. 
 
-Color-log works as console.log logger on Node.js but with extra data and colors to make easier find the lines on your log files.
+Color-logs works as console.log logger on Node.js but with extra data and colors to make easier find the lines on your log files.
 
 ## Installation
 
-  npm install color-log
+  npm install color-logs
 
 ## Usage
 You can use all of them as console.log(), send just a string, multiple strings or mix strings and objects.
 
-    var log = require('path/color-log.js')(isLogEnabled, isDebugEnabled, __filename);
+    var log = require('path/color-logs.js')(isLogEnabled, isDebugEnabled, __filename);
     
     log.Debug(...);
     log.Info(...);
@@ -32,7 +32,7 @@ You can use all of them as console.log(), send just a string, multiple strings o
 - 06 Jun 15:40:36.045 - **[file_name.js]** WARNING: message {object to value also} *-> YELLOW*
 - 06 Jun 15:40:36.045 - **[file_name.js]** ERROR: message {object to value also} *-> RED*
 
-![Color-log](http://i60.tinypic.com/2lm1g1f.png)
+![Color-logs](http://i60.tinypic.com/2lm1g1f.png)
 
 
 

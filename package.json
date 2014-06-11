@@ -1,14 +1,14 @@
 {
-  "name": "color-log",
+  "name": "color-logs",
   "version": "0.1.0",
-  "description": "Color-log works as console.log logger on Node.js but with extra data and colors to make easier find the lines on your log files.",
-  "main": "color-log.js",
+  "description": "Color-logs works as console.log logger on Node.js but with extra data and colors to make easier find the lines on your log files.",
+  "main": "color-logs.js",
   "scripts": {
     "test": "node ./test.js"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/jesuslg123/Color-Log.git"
+    "url": "https://github.com/jesuslg123/Color-Logs.git"
   },
   "keywords": [
     "log",
@@ -20,16 +20,16 @@
   "author": "Jesus L.G.",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/jesuslg123/Color-Log/issues"
+    "url": "https://github.com/jesuslg123/Color-Logs/issues"
   },
-  "homepage": "https://github.com/jesuslg123/Color-Log",
+  "homepage": "https://github.com/jesuslg123/Color-Logs",
   "dependencies": {
     "colors": "x"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/jesuslg123/Color-Log/blob/master/LICENSE-MIT"
+      "url": "https://github.com/jesuslg123/Color-Logs/blob/master/LICENSE-MIT"
     }
   ] 
 }
