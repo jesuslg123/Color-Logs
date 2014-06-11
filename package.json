@@ -1,6 +1,6 @@
 {
   "name": "color-log",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Color-log works as console.log logger on Node.js but with extra data and colors to make easier find the lines on your log files.",
   "main": "color-log.js",
   "scripts": {
@@ -25,5 +25,11 @@
   "homepage": "https://github.com/jesuslg123/Color-Log",
   "dependencies": {
     "colors": "x"
-  }
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jesuslg123/Color-Log/blob/master/LICENSE-MIT"
+    }
+  ] 
 }
