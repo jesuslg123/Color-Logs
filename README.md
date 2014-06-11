@@ -19,7 +19,6 @@ You can use all of them as console.log(), send just a string, multiple strings o
     log.Error(...);
 
 
-
 ## Tests
 
   npm test
