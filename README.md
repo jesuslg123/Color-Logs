@@ -32,7 +32,7 @@ You can use all of them as console.log(), send just a string, multiple strings o
 - 06 Jun 15:40:36.045 - **[file_name.js]** WARNING: message {object to value also} *-> YELLOW*
 - 06 Jun 15:40:36.045 - **[file_name.js]** ERROR: message {object to value also} *-> RED*
 
-![Color-logs](http://i60.tinypic.com/2lm1g1f.png)
+![Color-logs](http://i59.tinypic.com/15mb9y9.png)
 
 
 
