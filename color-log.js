@@ -3,12 +3,12 @@
 
 	var colors = require('colors');
 
-	var LogHelper = function(isLogEnable, isDebugMode, parentName)
+	var ColorLog = function(isLogEnable, isDebugMode, parentName)
 	{
 		this.inizializate(isLogEnable, isDebugMode, parentName);
 	}
 
-	var p = LogHelper.prototype;
+	var p = ColorLog.prototype;
 
 	p._logEnable;
 	p._debugMode;
@@ -153,7 +153,7 @@
 
 	module.exports = function(isLogEnable, isDebugMode, parentName)
 	{
-		return new LogHelper(isLogEnable, isDebugMode, parentName);
+		return new ColorLog(isLogEnable, isDebugMode, parentName);
 	};
 
 }());
