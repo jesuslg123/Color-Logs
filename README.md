@@ -19,11 +19,6 @@ You can use all of them as console.log(), send just a string, multiple strings o
     log.Error(...);
 
 
-## Tests
-
-  npm test
-
-
 ## Sample
 
 - 06 Jun 15:40:36.045 - **[file_name.js]** DEBUG: message {object to value also} *-> BLUE*
@@ -37,9 +32,11 @@ You can use all of them as console.log(), send just a string, multiple strings o
 
 ## Release History
 
-* 0.2.3 Enabled again test
+* 0.2.2 Simply update readme image
 
-* 0.2.2 Disabled test
+* 0.2.2 Enabled again test
+
+* 0.2.1 Disabled test
 
 * 0.2.0 Fixed test and enabled and disable bug and log
 
