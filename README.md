@@ -32,7 +32,7 @@ You can use all of them as console.log(), send just a string, multiple strings o
 
 ## Release History
 
-* 0.2.2 Simply update readme image
+* 0.2.3 Simply update readme image
 
 * 0.2.2 Enabled again test
 
