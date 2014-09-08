@@ -24,12 +24,36 @@
 		this._monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dece" ];
 	}
 
-	p.Info = p.info;
-	p.Debug = p.debug;
-	p.Warning = p.warning;
-	p.Error = p.error;
-	p.Log = p.log;
-	p.Dir = p.dir;
+
+	p.Info = function()
+	{
+		this.info(arguments);
+	}
+
+	p.Debug = function()
+	{
+		this.debug(arguments);
+	}
+
+	p.Warning = function()
+	{
+		this.warning(arguments);
+	}
+
+	p.Error = function()
+	{
+		this.error(arguments);
+	}
+
+	p.Log = function()
+	{
+		this.log(arguments);
+	}
+
+	p.Dir = function()
+	{
+		this.dir(arguments);
+	}
 
 	p.info = function()
 	{
