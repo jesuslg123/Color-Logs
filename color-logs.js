@@ -27,12 +27,12 @@
 
 	p.Info = function()
 	{
-		this.info(arguments);
+		this.info.apply(this.info, arguments);
 	}
 
 	p.Debug = function()
 	{
-		this.debug(arguments);
+		this.debug.apply(this.debug, arguments);
 	}
 
 	p.Warning = function()
