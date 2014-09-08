@@ -24,7 +24,14 @@
 		this._monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dece" ];
 	}
 
-	p.Info = function()
+	p.Info = p.info;
+	p.Debug = p.debug;
+	p.Warning = p.warning;
+	p.Error = p.error;
+	p.Log = p.log;
+	p.Dir = p.dir;
+
+	p.info = function()
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
@@ -34,7 +41,7 @@
 		this._log(arguments);
 	}
 
-	p.Debug = function()
+	p.debug = function()
 	{
 		if(this._debugMode)
 		{
@@ -47,7 +54,7 @@
 		}
 	}
 
-	p.Warning = function()
+	p.warning = function()
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
@@ -57,7 +64,7 @@
 		this._log( arguments);
 	}
 
-	p.Error = function()
+	p.error = function()
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
@@ -67,12 +74,12 @@
 		this._log(arguments);
 	}
 
-	p.Log = function()
+	p.log = function()
 	{
 		this._log(arguments);
 	}
 
-	p.Dir = function(object)
+	p.dir = function(object)
 	{
 		if(this._logEnable && this._debugMode)
 		{
