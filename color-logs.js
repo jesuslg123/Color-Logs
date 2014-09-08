@@ -25,7 +25,7 @@
 	}
 
 
-	p.Info = function()
+	/*p.Info = function()
 	{
 		this.info.apply(this.info, arguments);
 	}
@@ -53,9 +53,9 @@
 	p.Dir = function()
 	{
 		this.dir(arguments);
-	}
+	}*/
 
-	p.info = function()
+	p.Info = function()
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
@@ -65,7 +65,7 @@
 		this._log(arguments);
 	}
 
-	p.debug = function()
+	p.Debug = function()
 	{
 		if(this._debugMode)
 		{
@@ -78,7 +78,7 @@
 		}
 	}
 
-	p.warning = function()
+	p.Warning = function()
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
@@ -88,7 +88,7 @@
 		this._log( arguments);
 	}
 
-	p.error = function()
+	p.Error = function()
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
@@ -98,12 +98,12 @@
 		this._log(arguments);
 	}
 
-	p.log = function()
+	p.Log = function()
 	{
 		this._log(arguments);
 	}
 
-	p.dir = function(object)
+	p.Dir = function(object)
 	{
 		if(this._logEnable && this._debugMode)
 		{
