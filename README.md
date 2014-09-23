@@ -13,10 +13,10 @@ You can use all of them as console.log(), send just a string, multiple strings o
 
     var log = require('color-logs.js')(isLogEnabled, isDebugEnabled, __filename);
     
-    log.Debug(...);
-    log.Info(...);
-    log.Warning(...);
-    log.Error(...);
+    log.debug(...);
+    log.info(...);
+    log.warning(...);
+    log.error(...);
 
 
 ## Sample
@@ -31,6 +31,8 @@ You can use all of them as console.log(), send just a string, multiple strings o
 
 
 ## Release History
+
+* 0.5.0 Added support for lowercase funcions name
 
 * 0.2.3 Simply update readme image
 
