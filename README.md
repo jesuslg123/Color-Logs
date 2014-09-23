@@ -28,7 +28,10 @@ You can use all of them as console.log(), send just a string, multiple strings o
 
 ![Color-logs](http://i59.tinypic.com/15mb9y9.png)
 
+## Testing
 
+	npm i
+ 	npm test
 
 ## Release History
 
