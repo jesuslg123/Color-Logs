@@ -1,6 +1,6 @@
 {
   "name": "color-logs",
-  "version": "0.2.71",
+  "version": "0.5.0",
   "description": "Color-logs works as console.log logger on Node.js but with extra data and colors to make easier find the lines on your log files.",
   "main": "color-logs.js",
   "scripts": {
