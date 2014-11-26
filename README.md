@@ -35,6 +35,8 @@ You can use all of them as console.log(), send just a string, multiple strings o
 
 ## Release History
 
+* 0.5.3 Fixed path file on log for windows
+
 * 0.5.0 Added support for lowercase funcions name
 
 * 0.2.3 Simply update readme image
