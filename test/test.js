@@ -15,3 +15,9 @@ log.error('Testing color-logs with an ERROR message and objects', isLogEnabled, 
 
 log.Debug('Testing color-logs with an DEBUG message');
 log.debug('Testing color-logs with an DEBUG message and objects', isLogEnabled);
+
+log.Colors("red", "white").Debug("Test debugging with bg color");
+log.Colors("cyan").Error("Error in Cyan");
+
+log.Debug('Testing color-logs with an DEBUG message');
+

@@ -15,6 +15,9 @@
 	p._parentName;
 	p._monthNames;
 
+	var textColor = null;
+	var bgColor = null;
+
 	p.inizializate = function(isLogEnable, isDebugMode, parentName)
 	{
 		this._logEnable = isLogEnable;
@@ -30,6 +33,14 @@
 		this._monthNames = [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dece" ];
 	}
 
+	// available colors:
+	// black, red, green, yellow, blue, cyan, magenta, white
+	p.Colors = function(){
+		textColor = arguments[0];
+		bgColor = arguments[1];
+		return this;
+	}
+	p.colors = p.Colors;
 
 	p.Info = function()
 	{
@@ -65,7 +76,7 @@
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
-			var message = 'Info: '.green + arguments[0].toString().green;
+			var message = 'Info: '.green + this.colorize(arguments[0], "green");
 			arguments[0] = message;
 		}
 		this._log(arguments);
@@ -77,7 +88,7 @@
 		{
 			if(typeof(arguments[0]) == 'string')
 			{
-				var message = 'DEBUG: '.blue + arguments[0].toString().blue;
+				var message = 'DEBUG: '.blue + this.colorize(arguments[0], "blue");
 				arguments[0] = message;
 			}
 			this._log(arguments);
@@ -88,7 +99,7 @@
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
-			var message = 'WARNING: '.yellow + arguments[0].toString().yellow;
+			var message = 'WARNING: '.yellow + this.colorize(arguments[0], "yellow");
 			arguments[0] = message;
 		}
 		this._log( arguments);
@@ -98,7 +109,7 @@
 	{
 		if(typeof(arguments[0]) == 'string')
 		{
-			var message = 'ERROR: '.red.bold + arguments[0].toString().red;
+			var message = 'ERROR: '.red.bold + this.colorize(arguments[0], "red");
 			arguments[0] = message;
 		}
 		this._log(arguments);
@@ -117,6 +128,68 @@
 			console.dir(object);
 		}
 	}
+
+	p.colorize = function(message, defaultColor){
+		if(!textColor) textColor = defaultColor;
+		switch(textColor){
+			case "black":
+				message = message.toString().black;
+				break;
+			case "red":
+				message = message.toString().red;
+				break;
+			case "green":
+				message = message.toString().green;
+				break;
+			case "yellow":
+				message = message.toString().yellow;
+				break;
+			case "blue":
+				message = message.toString().blue;
+				break;
+			case "cyan":
+				message = message.toString().cyan;
+				break;
+			case "magenta":
+				message = message.toString().magenta;
+				break;
+			case "white":
+				message = message.toString().white;
+				break;
+			default:
+				message = message.toString();
+		}
+		switch(bgColor){
+			case "black":
+				message = message.bgBlack;
+				break;
+			case "red":
+				message = message.bgRed;
+				break;
+			case "green":
+				message = message.bgGreen;
+				break;
+			case "yellow":
+				message = message.bgYellow;
+				break;
+			case "blue":
+				message = message.bgBlue;
+				break;
+			case "cyan":
+				message = message.bgCyan;
+				break;
+			case "magenta":
+				message = message.bgMagenta;
+				break;
+			case "white":
+				message = message.bgWhite;
+				break;
+			default:
+		}
+		textColor = null;
+		bgColor = null;
+		return message;
+	};
 
 	p._log = function(argumentsCall)
 	{

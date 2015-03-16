@@ -18,7 +18,6 @@ You can use all of them as console.log(), send just a string, multiple strings o
     log.warning(...);
     log.error(...);
 
-
 ## Sample
 
 - 06 Jun 15:40:36.045 - **[file_name.js]** DEBUG: message {object to value also} *-> BLUE*
@@ -27,6 +26,23 @@ You can use all of them as console.log(), send just a string, multiple strings o
 - 06 Jun 15:40:36.045 - **[file_name.js]** ERROR: message {object to value also} *-> RED*
 
 ![Color-logs](http://i59.tinypic.com/15mb9y9.png)
+
+
+### Update jan-2015
+by [PauloVelho](https://github.com/paulovelho)
+You can set the color of the output on the fly.
+So, if you want to highlit any specific debug, it's possible using the function `log.colors()`
+
+Colors available: 
+black, red, green, yellow, blue, cyan, magenta, white
+
+#### Sample
+
+```javascript
+	log.colors("cyan").error("some error message") // outputs *some error message* in cyan
+	log.colors("black", "red").debug("some debug") // outputs *some debug* in black with a red background
+```
+
 
 ## Testing
 
