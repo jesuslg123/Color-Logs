@@ -49,9 +49,9 @@ black, red, green, yellow, blue, cyan, magenta, white
 	npm i
  	npm test
 
-## Release History by [PauloVelho](https://github.com/paulovelho)
+## Release History 
 
-* 0.6.0 Added colorize function
+* 0.6.0 Added colorize function by [PauloVelho](https://github.com/paulovelho)
 
 * 0.5.3 Fixed path file on log for windows
 
